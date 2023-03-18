@@ -1,0 +1,79 @@
+<html>
+   <head>
+       <meta charset="UTF-8">
+      <title>登录页面</title>
+      <style>
+         /* 添加背景图像的样式 */
+         body {
+            background-image: url(bg.jpg);
+            background-size: cover;
+         }
+
+         /* 添加登录表单容器的样式 */
+         .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+         }
+
+         /* 添加表单元素的样式 */
+         .container input[type="text"],
+         .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+         }
+
+         .container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: lightblue;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+         }
+
+         /* 添加提交按钮的悬停效果 */
+         .container input[type="submit"]:hover {
+            background-color: blue;
+         }
+
+         /* 添加表单标题的样式 */
+         .header {
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- 登录表单容器 -->
+      <div class="container">
+         <!-- 表单标题 -->
+         <div class="header">
+            登录
+         </div>
+         <!-- 表单字段 -->
+         <form action="">
+            <input type="text" placeholder="用户名">
+            <input type="password" placeholder="密码">
+            <input type="submit" value="登录">
+         </form>
+      </div>
+   </body>
+</html>
